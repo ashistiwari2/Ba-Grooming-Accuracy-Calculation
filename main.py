@@ -11,13 +11,13 @@ def main():
     st.title("BA Grooming  Accuracy Calculator")
 
     # Sidebar options
-    selected_option = st.sidebar.selectbox("Choose an option", ["Half Length","Full Length","Accuracy Calculatior"])
+    selected_option = st.sidebar.selectbox("Choose an option", ["Half Length","Full Length","Accuracy Calculator"])
 
     if selected_option == "Half Length":
         run_half_length_code(current_month)
     elif selected_option =="Full Length":
         run_full_length(current_month)
-    elif selected_option =="Accuracy Calculatior":
+    elif selected_option =="Accuracy Calculator":
         st.subheader("Accuracy Calculator for Month-{}".format(current_month))
         filename_half=f"accuracy_result_half_length_{current_month}.csv"
         filename_full=f"accuracy_result_full_length_{current_month}.csv"
